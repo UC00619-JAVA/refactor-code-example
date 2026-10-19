@@ -6,9 +6,15 @@ public class Main {
     // read 7 temperatures
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+
         double[] temperatures = readTemperatures(sc, 7);
+
+        // average
         System.out.println("Average: " + average(temperatures));
+
+        // range
         System.out.println("Range: " + (max(temperatures) - min(temperatures)));
+
         drawChart(temperatures);
     }
 
